@@ -4,6 +4,7 @@ import Header from "./components/Header";
 import Carousel from "./components/Carousel";
 import Main from "./components/Main";
 import BestSellers from "./components/BestSellers";
+import PopularLeagues from "./components/PopularLeagues";
 export default function App() {
   return (
     <>
@@ -11,6 +12,7 @@ export default function App() {
       <Carousel />
       <Main />
       <BestSellers />
+      <PopularLeagues />
       <Footer />
     </>
   );
