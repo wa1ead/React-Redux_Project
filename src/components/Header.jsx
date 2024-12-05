@@ -1,14 +1,22 @@
 import { CiSearch } from "react-icons/ci";
+import { CiShoppingCart } from "react-icons/ci";
 
 export default function Header() {
   return (
     <header>
-      <div className="text-gray-100 bg-violet-800 ">
+      <div className="text-gray-100 bg-blue-800 ">
         <div className="container mx-auto flex flex-wrap justify-around py-4 md:flex-row items-center">
-          <a className="flex title-font font-medium items-center text-gray-200 mb-4 md:mb-0">
-            <span className="ml-3 text-xl">Vintage Football Shirts</span>
+          <a
+            className="flex title-font font-medium items-center text-gray-200 mb-4 md:mb-0"
+            href="/"
+          >
+            <img
+              src="/vintage-football-shirts-icon.png"
+              alt="logo"
+              width="140px"
+            />
           </a>
-          <div className="w-[50%] relative">
+          <div className="mx-auto w-[50%] relative">
             <input
               type="text"
               className="p-2 w-full bg-transparent border-b-2 border-b-white placeholder:text-gray-200 focus:outline-none"
@@ -18,8 +26,8 @@ export default function Header() {
               <CiSearch />
             </div>
           </div>
-          <button className="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">
-            Button
+          <button className="text-3xl">
+            <CiShoppingCart />
           </button>
         </div>
       </div>

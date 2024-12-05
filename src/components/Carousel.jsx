@@ -44,7 +44,7 @@ export default function Carousel() {
                 Wearing the{" "}
                 <span className="text-yellow-400 font-bold">GLORY!</span>
               </p>
-              <button className="py-2 px-6 border-2 border-violet-700 rounded-full bg-violet-900 text-xl font-normal hover:bg-violet-700">
+              <button className="py-2 px-6 border-2 border-blue-700 rounded-full bg-blue-900 text-xl font-normal hover:bg-blue-700">
                 Kick Off!
               </button>
             </div>
