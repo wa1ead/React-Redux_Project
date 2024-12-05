@@ -4,7 +4,7 @@ export default function BestSellers() {
       <div>
         <h1 className="text-gray-950 font-semibold text-2xl">Best Sellers</h1>
       </div>
-      <div class="container px-5 py-12 mx-auto">
+      <div class="container px-5 py-24 mx-auto">
         <div class="flex flex-wrap -m-4">
           <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
             <a class="block relative h-48 rounded overflow-hidden">

@@ -1,6 +1,6 @@
 export default function Aside() {
   return (
-    <section className="w-[20%] h-screen float-start bg-gray-200">
+    <aside className="w-[20%] h-screen float-start z-50 bg-gray-200">
       <div className="flex flex-col gap-4">
         <div>
           <input type="text" id="search" />
@@ -28,6 +28,6 @@ export default function Aside() {
           </div>
         </div>
       </div>
-    </section>
+    </aside>
   );
 }
