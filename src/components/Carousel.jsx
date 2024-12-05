@@ -18,27 +18,39 @@ export default function Carousel() {
   ];
 
   return (
-    <div
-      data-hs-carousel='{
-    "loadingClasses": "opacity-0",
-    "dotsItemClasses": "hs-carousel-active:bg-blue-700 hs-carousel-active:border-blue-700 size-3 border border-gray-400 rounded-full cursor-pointer dark:border-neutral-600 dark:hs-carousel-active:bg-blue-500 dark:hs-carousel-active:border-blue-500",
+    <section className="size-full">
+      <div
+        data-hs-carousel='{
+        "loadingClasses": "opacity-0",
     "isAutoPlay": true
   }'
-      className="relative"
-    >
-      <div className="hs-carousel relative overflow-hidden w-full min-h-screen bg-white">
-        <div className="hs-carousel-body absolute top-0 bottom-0 start-0 flex flex-nowrap transition-transform duration-700 opacity-0">
-          {images.map((i) => (
-            <div className="hs-carousel-slide relative w-full h-full">
-              <img src={i} className="w-full h-screen object-cover" />
-              <div className="absolute top-0 left-0 bg-black opacity-75 w-full h-full"></div>
+        className="relative"
+      >
+        <div className="hs-carousel relative overflow-hidden w-full min-h-screen bg-white">
+          <div className="hs-carousel-body absolute top-0 start-0 flex flex-nowrap transition-transform duration-700 opacity-0">
+            {images.map((i) => (
+              <div className="hs-carousel-slide relative w-full h-full">
+                <img src={i} className="w-full h-screen object-cover" />
+              </div>
+            ))}
+          </div>
+          <div className="absolute top-0 left-0 bg-black opacity-75 w-full h-full"></div>
+          <div className="w-full absolute my-48">
+            <div className="relative top-0 start-0 flex items-center text-white size-full justify-center flex-col gap-4">
+              <p className="text-2xl font-normal">
+                Wearing the{" "}
+                <span className="text-yellow-400 font-bold">HISTORY</span>
+                <br />
+                Wearing the{" "}
+                <span className="text-yellow-400 font-bold">GLORY!</span>
+              </p>
+              <button className="py-2 px-6 border-2 border-violet-700 rounded-full bg-violet-900 text-xl font-normal hover:bg-violet-700">
+                Kick Off!
+              </button>
             </div>
-          ))}
-          <div>
-            <h2 className="text-white">heelo</h2>
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
