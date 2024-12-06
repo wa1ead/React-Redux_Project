@@ -32,8 +32,8 @@ export default function Header() {
         </div>
       </div>
       <div className="bg-gray-100">
-        <div className="container">
-          <ul className="flex justify-center gap-12 p-4">
+        <div className="p-4">
+          <ul className="flex justify-center gap-12 text-blue-950">
             <li className="text-lg font-semibold">Teams</li>
             <li className="text-lg font-semibold">National Teams</li>
             <li className="text-lg font-semibold">Leagues</li>
