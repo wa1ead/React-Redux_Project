@@ -5,6 +5,7 @@ import Carousel from "./components/Carousel";
 import Main from "./components/Main";
 import BestSellers from "./components/BestSellers";
 import PopularLeagues from "./components/PopularLeagues";
+import PopularBrands from "./PopularBrands";
 export default function App() {
   return (
     <>
@@ -13,6 +14,7 @@ export default function App() {
       <Main />
       <BestSellers />
       <PopularLeagues />
+      <PopularBrands />
       <Footer />
     </>
   );
