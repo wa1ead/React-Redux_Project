@@ -45,7 +45,7 @@ export default function Carousel() {
                 <span className="text-yellow-400 font-bold">GLORY!</span>
               </p>
               <button className="py-2 px-6 border-2 border-blue-700 rounded-full bg-blue-900 text-xl font-normal hover:bg-blue-700">
-                Kick Off!
+                Shop now!
               </button>
             </div>
           </div>
