@@ -3,7 +3,7 @@ export default function Main() {
     <section className="container px-5 py-24 mx-auto flex flex-wrap">
       <div className="flex w-full mb-20 flex-wrap">
         <h1 className="sm:text-3xl text-2xl font-semibold title-font text-gray-900 lg:w-1/3 lg:mb-0 mb-4">
-          Every Design is a different IDENTITY
+          Browse our different Collections
         </h1>
         <p className="lg:pl-6 lg:w-2/3 mx-auto leading-relaxed text-base">
           Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical
