@@ -76,18 +76,18 @@ export default function PopularLeagues() {
           <IoIosArrowBack />
         </button>
         {/* Cards Container */}
-        <div className="grid grid-cols-1 md:grid-cols-4  gap-8 mx-16 overflow-hidden">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-2 md:gap-8 mx-[10%] overflow-hidden">
           {visibleLeagues.map((league, index) => (
             <div
               key={index}
-              className=" bg-gray-900 rounded-md p-4 mx-8 flex flex-col gap-4 items-center"
+              className=" bg-gray-900 rounded-md p-4 mx-auto flex flex-col gap-4 items-center w-24 md:w-40 h-40"
             >
               <img
                 src={league.image}
                 alt={league.name}
                 className="w-16 h-16 object-contain"
               />
-              <p className="font-bold text-lg text-gray-100">{league.name}</p>
+              <p className="font-bold text-lg text-gray-100 text-center">{league.name}</p>
             </div>
           ))}
         </div>
