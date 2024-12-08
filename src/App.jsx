@@ -6,9 +6,11 @@ import Main from "./components/Main";
 import BestSellers from "./components/BestSellers";
 import PopularLeagues from "./components/PopularLeagues";
 import PopularBrands from "./PopularBrands";
+import ShoppingCart from "./components/ShoppingCart";
 export default function App() {
   return (
     <>
+      <ShoppingCart />
       <Header />
       <Carousel />
       <Main />
