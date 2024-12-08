@@ -1,4 +1,5 @@
-export default function ShoppingCart() {
+import { useState } from "react";
+export default function ShoppingCart({ onClose }) {
   const products = [
     {
       name: "ITALY 2006 World Cup",
@@ -33,11 +34,11 @@ export default function ShoppingCart() {
     <aside className="w-[40%] h-screen float-end bg-gray-200 fixed right-0 top-0 z-10 p-4 max-sm:w-full">
       <div className="flex justify-between items-center border-b-2 border-b-gray-900 mb-6 py-2">
         <h1 className="font-bold text-gray-900 text-xl">Your Cart</h1>
-        <button>x</button>
+        <button onClick={onClose}>x</button>
       </div>
       <div className="flex flex-col gap-2">
         {products.map((product, index) => (
-          <div className="grid grid-cols-5 bg-white p-2 rounded-md">
+          <div className="grid grid-cols-5 bg-white p-2 rounded-md" key={index}>
             <div>
               <img
                 src={product.image}
