@@ -66,7 +66,7 @@ export default function BestSellers() {
       <div class="container px-5 py-24 mx-auto">
         <div class="flex flex-wrap -m-4">
           {shirts.map((shirt, index) => (
-            <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+            <div class="lg:w-1/4 md:w-1/2 p-4 w-full" key={index}>
               <a class="block relative h-48 rounded overflow-hidden">
                 <img
                   alt={shirt.name}
