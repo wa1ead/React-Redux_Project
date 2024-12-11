@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
+import { AiOutlineClose } from "react-icons/ai";
 import { TbEditCircle } from "react-icons/tb";
 import { TiDeleteOutline } from "react-icons/ti";
 import { deleteProduct } from "../features/shopping/ShoppingSlice";
@@ -21,8 +22,8 @@ export default function ShoppingCart({ onClose }) {
       {/* Header */}
       <div className="flex justify-between items-center border-b-2 border-b-gray-900 mb-6 py-2">
         <h1 className="font-bold text-gray-900 text-xl">Your Cart</h1>
-        <button onClick={onClose} className="text-red-600 font-bold">
-          x
+        <button onClick={onClose} className="text-red-950 font-bold text-xl">
+          <AiOutlineClose />
         </button>
       </div>
 
