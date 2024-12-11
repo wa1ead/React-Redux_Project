@@ -115,9 +115,7 @@ export default function ShoppingCart({ onClose }) {
                 </div>
               </div>
               <div className="text-center self-center mx-auto">
-                <p className="font-light">
-                  ${product.price.toFixed(2)}
-                </p>
+                <p className="font-light">${product.price.toFixed(2)}</p>
               </div>
               <div className="flex gap-2 mx-auto">
                 <button className="text-red-600 font-bold ">x</button>
@@ -128,9 +126,17 @@ export default function ShoppingCart({ onClose }) {
       </div>
 
       {/* Bottom Banner */}
-      <div className="fixed bottom-0 right-0 w-[33%] bg-gray-800 text-white p-4 flex justify-between items-center shadow-md max-sm:w-full">
-        <h1 className="text-lg font-bold font-serif">Total</h1>
-        <p className="text-lg font-serif">${calculateTotal().toFixed(2)}</p>
+      <div className="fixed bottom-0 right-0 w-[33%] shadow-md max-sm:w-full">
+        <div className="bg-gray-400 p-4 flex flex-col items-center justify-center gap-2">
+          <p className="text-lg">
+            You can go to the <a href="#" className='underline'>Checkout</a> page or pay with
+          </p>
+          <button className="p-2 rounded-lg bg-blue-600">PAYPAL</button>
+        </div>
+        <div className="bg-gray-800 text-white p-4 flex justify-between items-center">
+          <h1 className="text-lg font-bold font-serif">Total</h1>
+          <p className="text-lg font-serif">${calculateTotal().toFixed(2)}</p>
+        </div>
       </div>
     </aside>
   );
